@@ -1,4 +1,4 @@
-"""Support for refoss sensors."""
+"""Support for refoss_lan sensors."""
 
 from __future__ import annotations
 

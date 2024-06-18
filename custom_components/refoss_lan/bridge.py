@@ -14,7 +14,7 @@ from .coordinator import RefossDataUpdateCoordinator
 
 
 class DiscoveryService(Listener):
-    """Discovery event handler for refoss devices."""
+    """Discovery event handler for refoss_lan devices."""
 
     def __init__(self, hass: HomeAssistant, discovery: Discovery) -> None:
         """Init discovery service."""

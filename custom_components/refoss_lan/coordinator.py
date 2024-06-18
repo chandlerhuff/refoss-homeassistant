@@ -1,4 +1,4 @@
-"""Helper and coordinator for refoss."""
+"""Helper and coordinator for refoss_lan."""
 
 from __future__ import annotations
 
