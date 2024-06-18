@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from datetime import timedelta
 
-from refoss_ha.controller.device import BaseDevice
-from refoss_ha.exceptions import DeviceTimeoutError
+from .refoss_ha.controller.device import BaseDevice
+from .refoss_ha.exceptions import DeviceTimeoutError
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
