@@ -3,7 +3,8 @@
   "name": "Refoss",
   "codeowners": ["@ashionky"],
   "config_flow": true,
-  "documentation": "https://github.com/ashionky/refoss/blob/master/README.md",
+  "documentation": "https://github.com/Refoss/refoss-homeassistant/blob/main/README.md",
   "iot_class": "local_polling",
-  "version": "1.2.1"
+  "version": "1.2.1",
+  "requirements": ["refoss-ha==1.2.1"]
 }

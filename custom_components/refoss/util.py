@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from .refoss_ha.discovery import Discovery
+from refoss_ha.discovery import Discovery
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import singleton
