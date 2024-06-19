@@ -1,11 +1,15 @@
 # Refoss LAN
 This homeassistant integration allows you to control your Refoss devices in a very flexible way.
 
-
 ## Installation
 ### HACS (recommended)
-Integration is available as default repository in HACS.
-- Make sure the [HACS integration](https://hacs.xyz/) is properly installed for your instance of home assistant.
+   Make sure the [HACS integration](https://hacs.xyz/) is properly installed for your instance of home assistant.
+
+#### Home Assistant Community Store in HACS
+In your HA frontend go to HACS -> Integrations, search for 'Refoss LAN' and hit 'Install' You'll have to restart HA to let it recognize the new integration.
+If not found in Home Assistant Community Store, you can also install it used [Custom Repositories](https://hacs.xyz/docs/faq/custom_repositories)
+
+#### Custom Repositories in HACS
 - Reference [Custom Repositories](https://hacs.xyz/docs/faq/custom_repositories),In the HACS UI go to "Integrations", click on "+" in the lower right corner".
 - Paste https://github.com/Refoss/refoss-homeassistant into the field that says "Add custom repository URL", select "Integration" from "Category" dropdown and click "Add".
 - You should now see a card with the Refoss LAN integration in the HACS -> "Integrations" section. Click "Install".
