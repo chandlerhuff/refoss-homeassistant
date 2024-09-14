@@ -85,7 +85,7 @@ class Discovery(asyncio.DatagramProtocol, Listener):
         """Broadcast."""
         address = ("255.255.255.255", 9988)
         msg = json.dumps(
-            {"id": "48cbd88f969eb3c486085cfe7b5eb1e4", "devName": "*"}
+            {"id": "16BD367582B860AFC42FE108BA254888", "devName": "*"}
         ).encode("utf-8")
         try:
             self.transport.sendto(msg, address)
@@ -103,6 +103,9 @@ class Discovery(asyncio.DatagramProtocol, Listener):
         """Handle incoming datagram messages."""
         json_str = format(data.decode("utf-8"))
         data_dict = json.loads(json_str)
+        # em16 does not send channels in UDP response so have to hard code them.
+        data_dict["channels"] = "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]"
+
         if 'channels' in data_dict and 'uuid' in data_dict:
             device: DeviceInfo = DeviceInfo.from_dict(data_dict)
             if device is None:

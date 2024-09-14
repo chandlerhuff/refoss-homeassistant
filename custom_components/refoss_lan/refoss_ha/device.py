@@ -69,10 +69,10 @@ class DeviceInfo(BaseDictPayload):
             method, namespace, payload, device_uuid
         )
 
-        if self.device_type == "r10":
+        if self.device_type == "em16":
             path = f"http://{self.inner_ip}/config"
         else:
-            path = f"http://{self.inner_ip}/public"
+            path = f"http://{self.inner_ip}/config"
 
         try:
             async with ClientSession() as session, session.post(
@@ -107,6 +107,7 @@ class DeviceInfo(BaseDictPayload):
             for _ in range(16)
         )
 
+        # Must be edited with file editor to have your user key.
         userkey = ""
 
         # Hash it as md5

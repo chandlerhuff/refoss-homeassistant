@@ -44,7 +44,7 @@ class RefossSensorEntityDescription(SensorEntityDescription):
 
 
 SENSORS: dict[str, tuple[RefossSensorEntityDescription, ...]] = {
-    "em06": (
+    "em16": (
         RefossSensorEntityDescription(
             key="power",
             translation_key="power",
